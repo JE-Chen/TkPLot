@@ -20,7 +20,8 @@ def set_embed_matplotlib(new_window):
     y_pos = np.arange(len(people))
     performance = [10, 20, 30, 40, 50]
     ax.barh(y_pos, performance, align='center')
-    ax.set_yticks(y_pos, labels=people)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(people)
     ax.invert_yaxis()  # labels read top-to-bottom
     ax.set_xlabel('Performance')
     ax.set_title('How fast do you want to go today?')

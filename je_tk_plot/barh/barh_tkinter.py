@@ -12,7 +12,8 @@ def make_barh_graph(y_content_list: list, x_content_list: list, x_label: str = "
     y_pos = np.arange(len(y_content_list))
     axes.barh(y_pos, x_content_list, align='center')
     y_content_list = ['\n'.join(wrap(content, 20)) for content in y_content_list]
-    axes.set_yticks(y_pos, labels=y_content_list)
+    axes.set_yticks(y_pos)
+    axes.set_ylabel(y_content_list)
     axes.invert_yaxis()  # labels read top-to-bottom
     axes.set_xlabel(x_label)
     axes.set_title(title)

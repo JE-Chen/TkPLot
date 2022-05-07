@@ -4,14 +4,14 @@ with open("README.md", "r") as README:
     long_description = README.read()
 
 setuptools.setup(
-    name="je_matplotlib_wrapper_dev",
+    name="je_tk_plot_dev",
     version="0.0.02",
     author="JE-Chen",
     author_email="zenmailman@gmail.com",
     description="",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/JE-Chen/TkinterWithMatplotlib",
+    url="https://github.com/JE-Chen/TkPLot",
     packages=setuptools.find_packages(),
     install_requires=[
         "matplotlib",
